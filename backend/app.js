@@ -38,6 +38,10 @@ app.use("/api/teacher", teacherRoute);
 app.use("/api/v1/announcements", announcementRouter);
 
 
+
+app.use("/api/v1/announcements", announcementRouter);
+
+
 app.use((req, res, next) => {
   res.status(404).json({ success: false, message: "Route not found" });
 });
